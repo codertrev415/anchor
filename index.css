@@ -1,9 +1,39 @@
+body{
+    background-color: rgb(112, 128, 144);
+}
+
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height: auto;
+    width: 12rem;    
+}
+
 #countLabel{
     display: block;
     text-align: center;
     font-size: 10em;
     font-family: Arial, Helvetica, sans-serif;
 } 
+
+.plus-container{
+    overflow: hidden; /*Hides image while it is off-screen */
+    width: 100%;
+    max-width: 35rem;
+}
+
+.plus-image{
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(-100%); /*Start */
+
+}
 
 #btnContainer{
     text-align: center;
